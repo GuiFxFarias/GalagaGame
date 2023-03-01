@@ -61,16 +61,16 @@ function Ship() {
       setY(positionY - 1);
     }
 
-    switch (code) {
-      case "Space":
-        setSY(shotY - 4);
-        setSX(X);
-        break;
-    }
+    // switch (code) {
+    //   case "Space":
+    //     setSY(shotY - 4);
+    //     setSX(X);
+    //     break;
+    // }
 
-    if (shotY <= areaS.top) {
-      setSY(Y);
-    }
+    // if (shotY <= areaS.top) {
+    //   setSY(Y);
+    // }
   }
 
   return (
@@ -87,7 +87,7 @@ function Ship() {
           left: `${X}%`,
         }}
       ></div>
-      <Bullet shipX={shotX} shipY={shotY}/>
+      {/* <Bullet shipX={shotX} shipY={shotY}/> */}
     </>
   );
 }

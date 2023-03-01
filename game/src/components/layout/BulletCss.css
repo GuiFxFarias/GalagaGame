@@ -1,9 +1,19 @@
+@keyframes bala {
+  from {
+    top: 60%;
+  }
+  to {
+    top: -2%;
+  }
+}
+
 .bullet {
   width: 10px;
   background-color: blue;
   height: 15px;
-  transition: .05s;
-  
+  transition: 0.05s;
+  animation-duration: 2s;
+  animation: bala;
 
   position: absolute;
   -khtml-user-select: none;
