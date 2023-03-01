@@ -2,8 +2,5 @@
   background-color: yellow;
   height: 30px;
   width: 30px;
-  margin-bottom: 10px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
+  transition: 1s ;
 }

@@ -1,9 +1,14 @@
 import "./MobsCss.css";
+import { motion } from "framer-motion";
 
 function Mobs() {
   return (
     <>
-      <div className="mob"></div>
+      <motion.div
+        className="mob"
+        animate={{ x: ["100px", "0px", "400px"] }}
+        onAnimationIteration={Infinity}
+      />
     </>
   );
 }
