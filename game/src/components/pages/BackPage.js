@@ -1,3 +1,4 @@
+import Bullet from "../layout/Bullet";
 import Ship from "../layout/Ship";
 
 import "./BackPageCss.css";

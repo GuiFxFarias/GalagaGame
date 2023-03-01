@@ -1,19 +1,15 @@
 import { useState } from "react";
 import "./BulletCss.css";
 
-function Bullet({ shipX, shipY }) {
-  const [shotX, setSX] = useState();
-  const [shotY, setSY] = useState();
 
-  function shotBullet(e) {
-    console.log(e.code);
-  }
+
+function Bullet({ shipY, shipX, shotFunction }) {
+  
 
   return (
     <>
       <div
-        onKeyDown={shotBullet}
-        tabIndex="-1"
+        onKeyDown={shotFunction}
         style={{ display: "block", top: `${shipY}%`, left: `${shipX}%` }}
         className="bullet"
       ></div>
