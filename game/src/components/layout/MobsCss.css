@@ -2,5 +2,11 @@
   background-color: yellow;
   height: 30px;
   width: 30px;
-  transition: 1s ;
+  transition: 1s;
+
+  position: absolute;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

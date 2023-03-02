@@ -1,16 +1,16 @@
 import { useState } from "react";
 import "./BulletCss.css";
 
-function Bullet({ shipY, shipX, shotFunction }) {
+function Bullet({ shipY, shipX, opacityShot }) {
   return (
     <>
       <div
-        onKeyDown={shotFunction}
         style={{
           display: "block",
           top: `${shipY}%`,
           left: `${shipX}%`,
           animation: "bala",
+          opacityShot: opacityShot,
         }}
         className="bullet"
       ></div>

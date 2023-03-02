@@ -44,6 +44,9 @@ function Ship() {
         setY(Y + 2);
         setX(X + 2);
         break;
+      case "Space":
+        shot();
+        break;
     }
 
     if (X >= area.right) {
@@ -60,17 +63,11 @@ function Ship() {
     if (Y >= area.bottom) {
       setY(positionY - 1);
     }
+  }
 
-    // switch (code) {
-    //   case "Space":
-    //     setSY(shotY - 4);
-    //     setSX(X);
-    //     break;
-    // }
-
-    // if (shotY <= areaS.top) {
-    //   setSY(Y);
-    // }
+  async function shot() {
+    setSY(shotY - 10);
+    setSX(X);
   }
 
   return (
@@ -81,13 +78,14 @@ function Ship() {
         className="ship"
         style={{
           cursor: "pointer",
-          transition: ".1s ", 
+          transition: ".1s ",
           position: "absolute",
           top: `${Y}%`,
           left: `${X}%`,
         }}
       ></div>
-      {/* <Bullet shipX={shotX} shipY={shotY}/> */}
+      <Bullet shipX={X} shipY={Y} />
+      {shotY > areaS.top && <Bullet shipX={shotX} shipY={shotY} />}
     </>
   );
 }

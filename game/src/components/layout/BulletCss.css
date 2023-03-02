@@ -11,7 +11,7 @@
   width: 10px;
   background-color: blue;
   height: 15px;
-  transition: 0.05s;
+  transition: 1s;
   animation-duration: 2s;
   animation: bala;
 
